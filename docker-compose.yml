@@ -1,0 +1,10 @@
+services:
+  gizmo:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: gizmo
+    ports:
+      - "8000:8000"
+    environment:
+      - GIZMO_ENV=development
