@@ -1,0 +1,20 @@
+name: Gizmo
+version: "0.1.0"
+slug: gizmo
+description: The invisible butler of our home.
+url: https://github.com/Shockberg/gizmo
+arch:
+  - amd64
+startup: services
+boot: auto
+init: false
+ports:
+  8000/tcp: 8000
+ports_description:
+  8000/tcp: Gizmo API
+map:
+  - addon_config:rw
+options:
+  log_level: info
+schema:
+  log_level: list(debug|info|warning|error)
