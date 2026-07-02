@@ -2,20 +2,21 @@
 
 Gizmo is the invisible butler of our home.
 
-This first add-on version only provides a `/status` endpoint.
+## Version
 
-## Endpoint
+0.2.0 - Foundation Core
+
+## Endpoints
 
 ```http
+GET /
 GET /status
+GET /health
+GET /about
 ```
 
-Expected response:
+## Purpose
 
-```json
-{
-  "name": "Gizmo",
-  "version": "0.1.0",
-  "status": "running"
-}
-```
+This version adds Gizmo's basic service identity and health checks.
+
+It does not yet connect to MariaDB or Google Calendar.

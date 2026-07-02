@@ -1,5 +1,5 @@
 name: Gizmo
-version: "0.1.0"
+version: "0.2.0"
 slug: gizmo
 description: The invisible butler of our home.
 url: https://github.com/Shockberg/gizmo
@@ -16,5 +16,7 @@ map:
   - addon_config:rw
 options:
   log_level: info
+  timezone: Europe/Helsinki
 schema:
   log_level: list(debug|info|warning|error)
+  timezone: str
