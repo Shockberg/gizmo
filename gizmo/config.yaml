@@ -1,5 +1,5 @@
 name: Gizmo
-version: "0.2.0"
+version: "0.3.0"
 slug: gizmo
 description: The invisible butler of our home.
 url: https://github.com/Shockberg/gizmo
@@ -17,6 +17,18 @@ map:
 options:
   log_level: info
   timezone: Europe/Helsinki
+  database:
+    host: core-mariadb
+    port: 3306
+    name: gizmo
+    username: gizmo
+    password: ""
 schema:
   log_level: list(debug|info|warning|error)
   timezone: str
+  database:
+    host: str
+    port: int
+    name: str
+    username: str
+    password: password

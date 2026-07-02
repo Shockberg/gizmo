@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.3.0 Database Core - 2026-07-02
+
+### Added
+- Added MariaDB configuration fields to Home Assistant add-on options.
+- Added `/database/status` endpoint.
+- Updated `/status` to report database state.
+- Updated `/health` to report database state.
+- Added database bootstrap SQL script.
+
 ## v0.2.0 Foundation Core - 2026-07-02
 
 ### Added

@@ -3,7 +3,7 @@ FROM $BUILD_FROM
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir fastapi uvicorn pydantic
+RUN pip install --no-cache-dir fastapi uvicorn pydantic pymysql
 
 COPY app /app
 COPY run.sh /run.sh
